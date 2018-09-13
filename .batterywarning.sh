@@ -14,7 +14,7 @@
             # fi
         else
              if [ $battery_level -le 15 ]; then
-                notify-send "Battery is lower 35%. Connect your AC adapter." "Charging: ${battery_level}%"
+                notify-send "Battery is lower 15%. Connect your AC adapter." "Charging: ${battery_level}%"
                 if ! on_ac_power; then
                     java -jar .batt_low.jar   ## Display LOWBATTERY notification window
                 fi
